@@ -30,7 +30,7 @@ export const Pagination: React.FC<Props> = ({
         <a
           data-cy="prevLink"
           className="page-link"
-          href="#prev"
+          href="#"
           aria-disabled={`${currentPage === 1 ? 'true' : 'false'}`}
           onClick={() => handleCurrentPage(currentPage - 1)}
         >
@@ -66,7 +66,7 @@ export const Pagination: React.FC<Props> = ({
         <a
           data-cy="nextLink"
           className="page-link"
-          href="#next"
+          href="#"
           aria-disabled={`${currentPage === totalPages ? 'true' : 'false'}`}
           onClick={() => handleCurrentPage(currentPage + 1)}
         >
